@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: rgb(24, 24, 24);
+  color: white;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.kotak-login {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  background: rgb(110, 110, 110);
+  border-radius: 15px;
+  box-shadow: 10px 10px 15px rgba(255, 255, 255, 0.1);
+  padding: 15px;
+}
+
+.kotak-login h1 {
+  text-align: center;
+  padding: 20px;
+}
+
+.kotak-login form {
+  padding: 5px;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 15px;
+}
+
+form .text {
+  position: relative;
+  border-bottom: 2px solid #adadad;
+  margin: 30px 0;
+}
+.text input {
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  outline: none;
+  color: white;
+}
+.text label {
+  float: left;
+  position: absolute;
+  top: -45%;
+  left: 5px;
+  color: rgb(212, 212, 212);
+}
+
+.text span::before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: rgb(184, 49, 5);
+  transition: 0.5s;
+}
+
+input[placeholder="Username"] {
+  color: white;
+}
+
+button[type="submit"] {
+  width: 50%;
+  height: 50px;
+  background: rgb(233, 233, 233);
+  border-radius: 25px;
+  font-size: 18px;
+  color: #202020;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+}

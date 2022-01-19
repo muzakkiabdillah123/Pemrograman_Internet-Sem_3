@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 78px;
+  background: #212e2b;
+  padding: 6px 14px;
+  z-index: 99;
+  transition: all 0.5s ease;
+}
+
+.sidebar .logo-details {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.sidebar .logo-details .icon {
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+.sidebar .logo-details .logo_name {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.sidebar .logo-details #btn {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  font-size: 22px;
+  transition: all 0.4s ease;
+  font-size: 23px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.sidebar i {
+  color: #fff;
+  height: 60px;
+  min-width: 50px;
+  font-size: 28px;
+  text-align: center;
+  line-height: 60px;
+}
+.sidebar .nav-list {
+  margin-top: 20px;
+  height: 100%;
+}
+.sidebar li {
+  position: relative;
+  margin: 8px 0;
+  list-style: none;
+}
+.sidebar li .tooltip {
+  position: absolute;
+  top: -20px;
+  left: calc(100% + 15px);
+  z-index: 3;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 400;
+  opacity: 0;
+  white-space: nowrap;
+  pointer-events: none;
+  transition: 0s;
+}
+.sidebar li:hover .tooltip {
+  opacity: 1;
+  pointer-events: auto;
+  transition: all 0.4s ease;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.sidebar li a {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  border-radius: 12px;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  background: #212e2b;
+}
+.sidebar li a:hover {
+  background: #fff;
+}
+.sidebar li a .links_name {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.4s;
+}
+.sidebar.open li a .links_name {
+  opacity: 1;
+  pointer-events: auto;
+}
+.sidebar li a:hover .links_name,
+.sidebar li a:hover i {
+  transition: all 0.5s ease;
+  color: #212e2b;
+}
+.sidebar li i {
+  height: 50px;
+  line-height: 50px;
+  font-size: 18px;
+  border-radius: 12px;
+}
+
+.container {
+  background-color: rgb(36, 36, 36);
+  color: white;
+}
+
+.add-menu {
+  border: 1px solid;
+  background: #e72e2e;
+  border-radius: 25px;
+  font-size: 18px;
+  color: white;
+  padding: 10px 20px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-left: 120px;
+  text-decoration: none;
+}
+
+.add-menu:hover {
+  border-color: #e72e2e;
+  transition: 0.5s;
+}
+
+.add-menu2 {
+  border: 1px solid;
+  background: #e72e2e;
+  border-radius: 25px;
+  font-size: 16px;
+  color: white;
+  padding: 8px 20px;
+  font-weight: 400;
+  cursor: auto;
+  margin-left: 630px;
+  text-decoration: none;
+}
+
+::placeholder {
+  color: white;
+}
+
+.add-menu2:hover {
+  border-color: #e72e2e;
+  transition: 0.5s;
+}
+
+.add-menu3 {
+  border: 1px solid;
+  background: #e72e2e;
+  border-radius: 25px;
+  font-size: 16px;
+  color: white;
+  padding: 8px 20px;
+  font-weight: 400;
+  cursor: pointer;
+  margin-left: 2px;
+  text-decoration: none;
+}
+
+.add-menu3:hover {
+  border-color: #e72e2e;
+  transition: 0.5s;
+}
+
+.placeholder {
+  color: #212e2b;
+  left: 20px;
+  line-height: 14px;
+  pointer-events: none;
+  position: absolute;
+  transform-origin: 0 50%;
+  transition: transform 200ms, color 200ms;
+  top: 20px;
+}
+
+.edit {
+  padding-right: 15px;
+}
+
+.search {
+  margin-left: 50px;
+}
+
+.kotak-judul {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 380px;
+  background: #ffffff;
+  color: black;
+  border-radius: 20px;
+  min-height: 20px;
+}
+
+.judul {
+  font-size: 50px;
+  padding-bottom: 20px;
+}
+
+.subjudul {
+  padding-top: 140px;
+  font-size: 35px;
+  padding-bottom: 20px;
+}
+
+thead {
+  background-color: #e73f3f;
+  height: 40px;
+}
+
+.isi-tabel {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: rgb(70, 70, 70);
+}
+
+.kotak-user {
+  position: absolute;
+  top: 10%;
+  left: 90%;
+  transform: translate(-35%, -80%);
+  width: 180px;
+  background: #9b9b9b;
+  color: black;
+  border-radius: 10px;
+  min-height: 20px;
+  height: 50px;
+  float: right;
+}
+
+.kotak-user i {
+  transform: translate(-19%, -50%);
+  margin-top: 0px;
+  font-size: 30px;
+}
+
+.kotak-user h2 {
+  transform: translate(35%, -305%);
+  margin-top: 0px;
+  font-size: 20px;
+  color: white;
+}
+
+@media screen and (max-width: 960px) {
+  .add-menu {
+    transform: translate(400%, 100%);
+  }
+  .add-menu2 {
+    transform: translate(-100%, 50%);
+  }
+  .add-menu3 {
+    transform: translate(1100%, -50%);
+  }
+}

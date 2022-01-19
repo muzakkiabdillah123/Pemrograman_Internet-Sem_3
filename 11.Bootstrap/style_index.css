@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.jumbotron {
+  text-shadow: rgb(73, 73, 73) 2px 2px;
+}
+
+.background-header {
+  background-image: url("images/layout_img/banner2.jpg");
+  background-color: #fafbfc;
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-top: 75px;
+}
+
+.button-primer {
+  background-color: rgb(72, 146, 43);
+  border: #fff;
+  color: #fff;
+  text-shadow: 0px 0px;
+}
+
+.button-primer:hover {
+  background-color: #12641d;
+  color: #fff;
+  text-shadow: 0px 0px;
+}
+
+.service-style {
+  margin-top: 15px;
+  background-color: #fafbfc;
+}
+
+.text-blue {
+  color: rgb(37, 131, 117);
+}
+
+.bg-red {
+  background-color: rgb(185, 54, 54);
+}
+
+h2:before,
+h2::after {
+  background-color: #0b9b6b;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 10%;
+}
+
+h2::before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+h2::after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+
+.button-sekunder {
+  background-color: transparent;
+  border-color: #dbdbdb;
+  color: #0b9b6b;
+}
+
+.button-sekunder:hover {
+  background-color: #0b9b6b;
+  border-color: #dbdbdb;
+  color: #fff;
+}
+
+.cover {
+  background: no-repeat center/cover;
+}
+
+#services i {
+  transition: transform 0.7s ease-in-out;
+}
+#services i:hover {
+  transform: rotate(360deg);
+}
+
+.card {
+  overflow: hidden;
+}
+
+.card:hover img {
+  transition: 0.5s all ease-in-out;
+  transform: scale(1.2);
+}

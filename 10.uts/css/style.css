@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: rgb(20, 20, 20);
+}
+
+.topnav a {
+  float: left;
+  position: relative;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: white;
+  color: black;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: black;
+}
+
+.header {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  color: black;
+}
+
+.header-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+}
+
+.header h1 {
+  font-size: 70px;
+  text-align: center;
+  color: honeydew;
+  font-family: "Montez", cursive;
+  padding-bottom: 15px;
+}
+
+.header img {
+  width: 100%;
+  height: 600px;
+  background-color: rgba(0, 0, 0, 0.4);
+  object-fit: cover;
+  position: relative;
+  background-repeat: no-repeat;
+}
+
+.wrapper {
+  width: 1200px;
+  margin: 100px auto;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.title h4 {
+  font-size: 36px;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+  color: white;
+  border-bottom: 5px dashed aquamarine;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: white;
+}
+.submenu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.single-menu {
+  flex-basis: 580px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid aquamarine;
+}
+
+.submenu {
+  flex-basis: 580px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid aquamarine;
+}
+
+.single-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.single-menu img {
+  width: 150px;
+  height: 150px;
+  margin-right: 30px;
+  border-radius: 50%;
+  border: 1px solid aquamarine;
+  padding: 3px;
+  transition: 1s;
+  position: relative;
+}
+
+.single-menu:hover {
+  color: aquamarine;
+  transition: 0.5s;
+}
+
+.single-menu h4 {
+  text-transform: capitalize;
+  font-size: 22px;
+  border-bottom: 1px dashed aquamarine;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+}
+
+.submenu h4 {
+  text-transform: capitalize;
+  font-size: 30px;
+  color: rgb(194, 49, 5);
+  border-bottom: 1px #333;
+}
+.single-menu h4 span {
+  float: right;
+  color: aquamarine;
+  font-style: italic;
+}
+
+.footer {
+  overflow: hidden;
+  background-color: rgb(20, 20, 20);
+  display: block;
+  height: 60px;
+}
+
+.tabel {
+  text-align: center;
+  color: #ddd;
+  background-color: black;
+}
+
+.footer h3 {
+  color: honeydew;
+  text-align: center;
+}
