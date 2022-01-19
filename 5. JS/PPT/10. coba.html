@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>javascript validation</h2>
+
+    <input id="numb">
+
+    <button type="button" onclick="myFunction()">Submit</button>
+
+    <p id="demo"></p>
+
+    <script>
+        function myFunction(){
+            // Mendapat nilai dari filed id="numb"
+            let x = document.getElementById("numb").value;
+            //
+            let text;
+            //isNaN(x) adalah kosong atau 
+            if(isNaN(x) || x<1 || x>10){
+                text = "Input not valid";
+            } else {
+                text = "Input OK";
+            }
+
+            document.getElementById("demo").innerHTML=text;
+        }
+    </script>
+</body>
+</html>

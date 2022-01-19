@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <style>
+        .judul{
+            color: darkmagenta;
+        }
+        h2 {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="judul">
+            <h1 align="center">FORM BIODATA MAHASISWA BARU</h1>
+        </div>
+
+        <form>
+            <h2>Profil diri</h2>
+
+            <label for="name">Nama</label><br>
+            <input type="text" id="name" name="name"><br>
+
+            <p>Jenis Kelamin</p>
+            <input type="radio" id="laki" value="Laki-laki">
+            <label for="laki">Laki-laki</label><br>
+            <input type="radio" id="perempuan" value="Perempuan">
+            <label for="perempuan">Perempuan</label><br><br>
+
+            <label for="tanggal">Tanggal lahir</label><br>
+            <input type="date" id="tanggal"><br><br>
+
+            <label for="alamat">Alamat</label><br>
+            <textarea name="alamat" id="alamat" cols="30" rows="10"></textarea><br><br>
+
+            <label for="email">Email</label><br>
+            <input type="email" id="email"><br><br>
+
+            <label for="hp">No HP</label><br>
+            <input type="text" id="hp"><br><br><br>
+            
+            <h2>Pendidikan</h2>
+
+            <label for="sekolah">Asal Sekolah</label><br>
+            <input type="text" id="sekolah"><br><br>
+            <label for="nilai">Nilai ujian sekolah</label><br>
+            <input type="number" id="nilai"><br><br>
+
+            <br>
+            <h2>Orang Tua</h2>
+            <label for="ayah">Nama Ayah</label><br>
+            <input type="text" id="ayah"><br><br>
+
+            <label for="ibu">Nama Ibu</label><br>
+            <input type="text" id="ibu"><br><br>
+
+            <label for="alamat ortu">Alamat Orang tua</label><br>
+            <textarea name="alamat ortu" id="alamat" cols="30" rows="10"></textarea><br><br><br>
+            
+            <div class="submit" align="center">
+                <input type="submit" value="SUBMIT" style="font-weight:bold;"><br><br>
+            </div>
+            
+        </form>
+    </div>
+</body>
+</html>

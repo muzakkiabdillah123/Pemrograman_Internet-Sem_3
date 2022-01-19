@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warung Makan Sederhana</title>
+    <style>
+        *{
+            box-sizing:border-box;
+        }
+
+        .topnav{
+            overflow: hidden;
+            background-color: rgb(20, 20, 20);
+        }
+
+        .topnav a{
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .topnav a:hover{
+            background-color: #ddd;
+            color: black;
+        }
+
+        .page-title-2 {
+            background-image: url('img/page-titles/page-title-2.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        .title{
+            text-align: center;
+            color: honeydew;
+            font-family: 'Montez', cursive;
+            font-size: 40px;
+            padding-top: 150px;
+            padding-bottom: 180px;
+        }
+
+        .sub-title{
+            text-align: center;
+            color: black;
+            font-family: 'Montez', cursive;
+            padding-top: 30px;
+        }
+
+        .space{
+            padding: 100px;
+        }
+
+        .leftcolumn{
+            float: left;
+            width: 50%;
+            padding: 10px;
+        }
+
+        .rightcolumn{
+            float: right;
+            width: 50%;
+            padding: 10px;
+        }
+
+        .card{
+            background-color: rgb(241, 241, 241);
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .menu-item-thumbnail{
+            margin-right: 20px;
+            overflow: hidden;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            width: 98px;
+            height: 98px;
+        }
+
+        .menu-item-description{
+            font-family: 'Montserrat-UltraLight', Arial, sans-serif;
+            padding-left: 7px;
+            font-size: 15px;
+        }
+
+        .menu-item-price{
+            font-size: 20px;
+            padding-left: 550px;
+        }
+
+        .footer{
+            overflow: hidden;
+            background-color: rgb(20, 20, 20);
+            display: block;
+            height: 60px;
+        }
+
+        .footer h3{
+            color: honeydew;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- title start -->
+    <div class="page-title-2">
+        <div class="topnav">
+            <a href="#home">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#reservation">RESERVATION</a>
+            <a href="#contact" style="float:right">CONTACT</a>
+        </div>
+        <div class="title">
+            <h1>MENU</h1>
+            <h3 style="font-family:'Lucida Sans'">Discover Our Menu</h3>
+        </div>
+    </div>
+
+    <!-- starters start -->
+    <div class="sub-title">
+        <h2>~ STARTERS ~</h2>
+    </div>
+    <div class="leftcolumn">
+        <!-- starters 1 -->
+        <div class="card">
+            <div class="menu-item-thumbnail"><img src="img/pics/menu-item-04.png" alt="FOTO" /></div>
+            <div class="menu-item-description">
+                <h3>SUP BAYAM</h3>
+                <p>Bayam, telur, susu, bawang merah, bawang putih, kentang, ayam, lemon</p>
+            </div>
+            <div class="menu-item-price">
+                <p>-----<br>$15<br>-----</p>
+            </div>
+        </div>
+
+        <!-- starters 2 -->
+        <div class="card">
+            <div class="menu-item-thumbnail"><img src="img/pics/menu-item-05.png" alt="FOTO" /></div>
+            <div class="menu-item-description">
+                <h3>SUP TOMAT</h3>
+                <p>Tomat, bawang merah, wortel, seledri, minyak zaitun, pure tomat, gula, sup sayur</p>
+            </div>
+            <div class="menu-item-price">
+                <p>-----<br>$16<br>-----</p>
+            </div>
+        </div>
+
+        <!-- starters 3 -->
+        <div class="card">
+            <div class="menu-item-thumbnail"><img src="img/pics/menu-item-06.png" alt="FOTO" /></div>
+            <div class="menu-item-description">
+                <h3>SUP JAMUR</h3>
+                <p>Jamur, minyak zaitun, bawang putih, bawang merah, garam laut, lada hitam, keju</p>
+            </div>
+            <div class="menu-item-price">
+                <p>-----<br>$18<br>-----</p>
+            </div>
+        </div>
+    </div>
+    <div class="rightcolumn">
+        <!-- starters 4 -->
+        <div class="card">
+            <div class="menu-item-thumbnail"><img src="img/pics/menu-item-07.png" alt="FOTO" /></div>
+            <div class="menu-item-description">
+                <h3>SALAD ORIGINAL</h3>
+                <p>Paha ayam, merica, minyak zaitun, garam, pancetta, alpukat, tomat, keju, buttermilk</p>
+            </div>
+            <div class="menu-item-price">
+                <p>-----<br>$16<br>-----</p>
+            </div>
+        </div>
+
+        <!-- starters 5 -->
+        <div class="card">
+            <div class="menu-item-thumbnail"><img src="img/pics/menu-item-08.png" alt="FOTO" /></div>
+            <div class="menu-item-description">
+                <h3>SALAD PEDAS</h3>
+                <p>Anggur, lemon, minyak zaitun, garam laut, lada hitam, kenari, yoghurt, seledri</p>
+            </div>
+            <div class="menu-item-price">
+                <p>-----<br>$19<br>-----</p>
+            </div>
+        </div>
+
+        <!-- starters 6 -->
+        <div class="card">
+            <div class="menu-item-thumbnail"><img src="img/pics/menu-item-09.png" alt="FOTO" /></div>
+            <div class="menu-item-description">
+                <h3>SALAD ASIN</h3>
+                <p>Asparagus, bayam, bawang merah, susu, keju, lada hitam</p>
+            </div>
+            <div class="menu-item-price">
+                <p>-----<br>$15<br>-----</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- space -->
+    <h1 style="text-align: center;">---<br> </h1>
+
+    <!-- main start -->
+    <div class="sub-title">
+        <h2>~ MAIN ~</h2>
+    </div>
+    <div class="leftcolumn">
+        <!-- main 1 -->
+        <div class="card">
+            <div class="menu-item-thumbnail"><img src="img/pics/menu-item-10.png" alt="FOTO" /></div>
+            <div class="menu-item-description">
+                <h3>AYAM BAKAR</h3>
+                <p>Dada ayam tanpa kulit, lada hitam, paprika merah, passata, jahe, bawang putih</p>
+            </div>
+            <div class="menu-item-price">
+                <p>-----<br>$21<br>-----</p>
+            </div>
+        </div>
+
+        <!-- main 2 -->
+        <div class="card">
+            <div class="menu-item-thumbnail"><img src="img/pics/menu-item-11.png" alt="FOTO" /></div>
+            <div class="menu-item-description">
+                <h3>BBQ</h3>
+                <p>Iga pendek, minyak zaitun, biji jintan, yoghurt, wortel, bawang, kol putih</p>
+            </div>
+            <div class="menu-item-price">
+                <p>-----<br>$25<br>-----</p>
+            </div>
+        </div>
+
+        <!-- main 3 -->
+        <div class="card">
+            <div class="menu-item-thumbnail"><img src="img/pics/menu-item-12.png" alt="FOTO" /></div>
+            <div class="menu-item-description">
+                <h3>AYAM PEDAS</h3>
+                <p>Paha ayam, stik drum ayam, kentang, ayenne pepper</p>
+            </div>
+            <div class="menu-item-price">
+                <p>-----<br>$17<br>-----</p>
+            </div>
+        </div>
+    </div>
+    <div class="rightcolumn">
+        <!-- main 4 -->
+        <div class="card">
+            <div class="menu-item-thumbnail"><img src="img/pics/menu-item-13.png" alt="FOTO" /></div>
+            <div class="menu-item-description">
+                <h3>TUNA GORENG</h3>
+                <p>Steak tuna, cabai merah, lemon, bawang putih, minyak zaitun</p>
+            </div>
+            <div class="menu-item-price">
+                <p>-----<br>$29<br>-----</p>
+            </div>
+        </div>
+
+        <!-- main 5 -->
+        <div class="card">
+            <div class="menu-item-thumbnail"><img src="img/pics/menu-item-14.png" alt="FOTO" /></div>
+            <div class="menu-item-description">
+                <h3>KALKUN REBUS</h3>
+                <p>Dada kalkun, cabai merah, minyak zaitun, tuna kaleng, lemon, lada hitam</p>
+            </div>
+            <div class="menu-item-price">
+                <p>-----<br>$28<br>-----</p>
+            </div>
+        </div>
+
+        <!-- main 6 -->
+        <div class="card">
+            <div class="menu-item-thumbnail"><img src="img/pics/menu-item-15.png" alt="FOTO" /></div>
+            <div class="menu-item-description">
+                <h3>STEAK MEWAH</h3>
+                <p>Steak sayap, bawang bombay, mentega, minyak zaitun, anggur</p>
+            </div>
+            <div class="menu-item-price">
+                <p>-----<br>$35<br>-----</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- space -->
+    <h1 style="text-align: center;">---<br> </h1>
+    
+    <!-- desert start -->
+    <div class="sub-title">
+        <h2>~ DESERT ~</h2>
+    </div>
+    <div class="leftcolumn">
+        <!-- desert 1 -->
+        <div class="card">
+            <div class="menu-item-thumbnail"><img src="img/pics/menu-item-16.png" alt="FOTO" /></div>
+            <div class="menu-item-description">
+                <h3>CHOCOLATE CAKE</h3>
+                <p>Dark chocolate, gula, lemon, stik vanila</p>
+            </div>
+            <div class="menu-item-price">
+                <p>-----<br>$14<br>-----</p>
+            </div>
+        </div>
+
+        <!-- desert 2 -->
+        <div class="card">
+            <div class="menu-item-thumbnail"><img src="img/pics/menu-item-17.png" alt="FOTO" /></div>
+            <div class="menu-item-description">
+                <h3>STRAWBERRY CAKE</h3>
+                <p>Strawberry, sirup, gula merah, krim keju, kayu manis</p>
+            </div>
+            <div class="menu-item-price">
+                <p>-----<br>$16<br>-----</p>
+            </div>
+        </div>
+
+        <!-- desert 3 -->
+        <div class="card">
+            <div class="menu-item-thumbnail"><img src="img/pics/menu-item-18.png" alt="FOTO" /></div>
+            <div class="menu-item-description">
+                <h3>VANILLA CAKE</h3>
+                <p>Pod vanilla, gula, jeruk, susu, krim</p>
+            </div>
+            <div class="menu-item-price">
+                <p>-----<br>$18<br>-----</p>
+            </div>
+        </div>
+    </div>
+    <div class="rightcolumn">
+        <!-- desert 4 -->
+        <div class="card">
+            <div class="menu-item-thumbnail"><img src="img/pics/menu-item-19.png" alt="FOTO" /></div>
+            <div class="menu-item-description">
+                <h3>PANNA COTA</h3>
+                <p>Susu, agar-agar bubuk, krim kocok, madu, gula, garam, buah beri</p>
+            </div>
+            <div class="menu-item-price">
+                <p>-----<br>$20<br>-----</p>
+            </div>
+        </div>
+
+        <!-- desert 5 -->
+        <div class="card">
+            <div class="menu-item-thumbnail"><img src="img/pics/menu-item-20.png" alt="FOTO" /></div>
+            <div class="menu-item-description">
+                <h3>TIRAMISU CAKE</h3>
+                <p>Kuning telur, gula, susu, keju, kopi, coklat bubuk, coklat</p>
+            </div>
+            <div class="menu-item-price">
+                <p>-----<br>$21<br>-----</p>
+            </div>
+        </div>
+
+        <!-- desert 6 -->
+        <div class="card">
+            <div class="menu-item-thumbnail"><img src="img/pics/menu-item-21.png" alt="FOTO" /></div>
+            <div class="menu-item-description">
+                <h3>ORANGE CAKE</h3>
+                <p>Jeruk, vanilla stick, susu, gula merah, krim</p>
+            </div>
+            <div class="menu-item-price">
+                <p>-----<br>$13<br>-----</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- space -->
+    <h1 style="text-align: center;">---<br> </h1>
+
+    <!-- footer start -->
+    <div class="footer">
+        <h3>Muzakki Abdillah</h3>
+    </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+body {
+    font: 16px/28px arial, sans-serif;
+    color : black;
+    background-image: url(whitediamond.png);
+}
+
+.container {
+    width: 800px;
+    margin: auto;
+    background-color: whitesmoke;
+    border-left: 5px solid aquamarine;
+    border-right: 5px solid aquamarine;
+}
+
+.header .judul {
+    font-size: 20px;
+    font-weight: bold;
+    height: 40px;
+}
+
+.foto {
+    padding-top: 20px;
+}
+
+.profil{
+    background-color:aqua;
+    height: 30px;
+    border: 5px solid black;
+    text-align: center;
+    padding-bottom: 30px;
+    color: darkslategray;
+}
+
+.Nama {
+    font-weight: bold;
+}
+
+.sekolah{
+    background-color:aqua;
+    height: 30px;
+    border: 5px solid black;
+    text-align: center;
+    padding-bottom: 30px;
+    color: darkslategray;
+}
+
+.sd {
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.skill {
+    background-color:aqua;
+    height: 30px;
+    border: 5px solid black;
+    text-align: center;
+    padding-bottom: 30px;
+    color: darkslategray;
+}
+
+.copyright {
+    background-color:#666;
+    padding: 8px;
+}

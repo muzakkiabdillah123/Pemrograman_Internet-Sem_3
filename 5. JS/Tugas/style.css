@@ -1,0 +1,61 @@
+html {
+  font-family: "Montez", cursive;
+}
+
+.container {
+  margin-top: 100px;
+  margin-left: 38%;
+  margin-right: 39.6%;
+  padding-left: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #14279b;
+  border-radius: 25px;
+}
+
+#output {
+  background-color: #e6e6e6;
+  padding: 15px;
+  width: 250px;
+  height: 50px;
+  text-align: right;
+  font-size: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+button {
+  padding: 10px;
+  width: 67px;
+  height: 45px;
+  margin-top: 10px;
+  background-color: #5c7aea;
+  color: white;
+  font-size: 20px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #e6e6e6;
+  color: black;
+}
+
+button:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 1350px) {
+  .container {
+    width: 295px;
+    margin-left: 30%;
+    padding-left: 10px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    width: 295px;
+    margin-left: 20%;
+    padding-left: 10px;
+  }
+}

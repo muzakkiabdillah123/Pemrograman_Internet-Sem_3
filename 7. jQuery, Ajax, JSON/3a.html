@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("p").hide("slow", function(){
+                    alert("The paragraph is now hidden");
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <button>Hide</button>
+
+    <h2>Latihan jQuery</h2>
+    <p>jQuery adalah library JavaScript yang mempermudah berbagai pekerjaan dalam membangun website</p>
+
+</body>
+</html>

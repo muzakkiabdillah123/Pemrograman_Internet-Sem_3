@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <style>
+        body{
+            background-color: #112031;
+            font: 16px/28px arial, sans-serif;
+            color: #D4ECDD;
+        }
+        .container{
+            width: 800px;
+            margin: auto;
+            background-color: #345B63;
+            border: 5px solid #D4ECDD;
+        }
+        .judul{
+            background-image: url(bg_judul.jpg);
+            height:130px;
+            margin-bottom: 20px;
+            border-bottom: 5px solid #D4ECDD;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="judul">
+            <br>
+            <h1 align="center">FORM BIODATA MAHASISWA BARU</h1>
+        </div>
+        <form action="data.php " method="POST" style="margin: 10px;">
+            <fieldset>
+                <legend align="center" style="font-weight:bold;">PROFIL DIRI</legend>
+                <label for="name">Nama</label><br>
+                <input type="text" id="name" name="name"><br>
+
+                <p>Jenis Kelamin</p>
+                <input type="radio" id="laki" value="Laki-laki">
+                <label for="laki">Laki-laki</label><br>
+                <input type="radio" id="perempuan" value="Perempuan">
+                <label for="perempuan">Perempuan</label><br><br>
+
+                <label for="tanggal">Tanggal lahir</label><br>
+                <input type="date" id="tanggal"><br><br>
+
+                <label for="alamat">Alamat</label><br>
+                <textarea name="alamat" id="alamat" cols="30" rows="10"></textarea><br><br>
+
+                <label for="email">Email</label><br>
+                <input type="email" id="email"><br><br>
+
+                <label for="hp">No HP</label><br>
+                <input type="text" id="hp"><br><br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend align="center" style="font-weight:bold;">PENDIDIKAN</legend>
+                <label for="sekolah">Asal Sekolah</label><br>
+                <input type="text" id="sekolah"><br><br>
+                <label for="nilai">Nilai ujian sekolah</label><br>
+                <input type="number" id="nilai"><br><br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend align="center" style="font-weight:bold;">ORANG TUA</legend>
+                <label for="ayah">Nama Ayah</label><br>
+                <input type="text" id="ayah"><br><br>
+
+                <label for="ibu">Nama Ibu</label><br>
+                <input type="text" id="ibu"><br><br>
+
+                <label for="alamat ortu">Alamat Orang tua</label><br>
+                <textarea name="alamat ortu" id="alamat" cols="30" rows="10"></textarea><br><br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend align="center" style="font-weight:bold;">FOTO</legend>
+                <label for="foto">Upload Foto disini</label><br>
+                <input type="file" id="foto" value="upload gambar"/><br><br>
+            </fieldset>
+            <br>
+            <div class="submit" align="center">
+                <input type="submit" value="SUBMIT" style="font-weight:bold;"><br><br>
+            </div>
+            
+        </form>
+    </div>
+</body>
+</html>

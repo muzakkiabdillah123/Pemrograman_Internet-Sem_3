@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing:border-box;
+        }
+        body{
+            font-family: Arial;
+            padding: 10px;
+            background: #f1f1f1;
+        }
+
+        /* Header/Blog Title */
+        .header{
+            padding: 30px;
+            text-align: center;
+            background: white;
+        }
+
+        .header h1{
+            font-size: 50px;
+        }
+
+        /* Style the top navigation bar */
+        .topnav{
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        /* Style the topnav links */
+        .topnav a{
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        /* Change color on hover */
+        .topnav a:hover{
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Create two unequal columns that floats next to each other */
+        /* Left column */
+        .leftcolumn{
+            float: left;
+            width: 75%;
+        }
+
+        /* Right column */
+        .rightcolumn{
+            float: left;
+            width: 25%;
+            background-color: #f1f1f1;
+            padding-left: 20px;
+        }
+
+        /* Fake image */
+        .fakeimg{
+            background-color: #aaa;
+            width: 100%;
+            padding: 20px;
+        }
+
+        /* Add a card effect for articles */
+        .card{
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Footer */
+        .footer{
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+            margin-top: 20px;
+        }
+
+        /* Responsive layout -when the screen is less than 800px wide, make the columns stack on top of each other of nexr ro each other */
+        @media screen and (max-width:800px){
+            .leftcolumn, .rightcolumn{
+                width: 100px;
+                padding: 0;
+            }
+        }
+
+        /* Responsive layout -when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+        @media screen and (max-width:400px){
+            .topnav a{
+                float: none;
+                width: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Website Saya</h1>
+        <p>Website mengenai berita terkini</p>
+    </div>
+
+    <div class="topnav">
+        <a href="#">Olahraga</a>
+        <a href="#">Gosip</a>
+        <a href="#">Agama</a>
+        <a href="#" style="float:right">Back</a>
+    </div>
+
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <h2>KEBAKARAN DI WATERBOOM</h2>
+                <h5>Bogor, Dec 7 2017</h5>
+                <div class="fakeimg" style="height: 200px;">
+                    Image
+                </div>
+                <p>Kebakaran..</p>
+                <p>Telah terjadi kebakaran di waterboom bogor, tidak diketahui penyebab dari kebakaran tersebut, warga sekitar mengatakan bahwa api sudah menjalar ke seluruh area waterboom sejak pukul 04.00 WIB</p>
+            </div>
+            <div class="card">
+                <h2>KELAPARAN DI DUBAI</h2>
+                <h5>Dubai, Sep 2 2017</h5>
+                <div class="fakeimg" style="height: 200px;">
+                    Image
+                </div>
+                <p>Kelaparan..</p>
+                <p>Telah terjadi krisis pangan di Dubai. Krisis pangan ini telah memakan banyak korban. Warga setempat menyatakan bahwa krisis pangan di Dubai ini telah terjadi dari pukul 23.59 waktu setempat</p>
+            </div>
+        </div>
+        <div class="rightcolumn">
+            <div class="card">
+                <h2>About Me</h2>
+                <div class="fakeimg" style="height: 100px;">
+                    Image
+                </div>
+                <p>My name is Muzakki Abdillah. Nice to meet you</p>
+            </div>
+            <div class="card">
+                <h3>Popular post</h3>
+                <div class="fakeimg"><p>Image</p></div>
+                <div class="fakeimg"><p>Image</p></div>
+                <div class="fakeimg"><p>Image</p></div>
+            </div>
+            <div class="card">
+                <h3>Follow Me</h3>
+                <a href="https://github.com/MuzakkiAbdillah123">Github</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h2>Copyright</h2>
+    </div>
+    
+</body>
+</html>
